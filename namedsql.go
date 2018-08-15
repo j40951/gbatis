@@ -58,4 +58,8 @@ func main() {
     }
     
     fmt.Println(d)
+    fmt.Println(d.Namespace)
+    for index, value := range d.Select {
+        fmt.Printf("(%d)id=%s, sql=%s\n", index, value.Id, value.Sql)
+    }
 }
